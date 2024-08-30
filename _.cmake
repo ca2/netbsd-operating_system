@@ -2,9 +2,9 @@
 
 message(STATUS "CMAKE_SYSTEM_NAME = ${CMAKE_SYSTEM_NAME}")
 
-if(${CMAKE_SYSTEM_NAME} STREQUAL "OpenBSD")
+if(${CMAKE_SYSTEM_NAME} STREQUAL "NetBSD")
 
-    include(operating_system/operating_system-openbsd/_.cmake)
+    include(operating_system/operating_system-netbsd/_.cmake)
 
 endif()
 
