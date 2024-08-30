@@ -1,0 +1,7 @@
+[submodule "operating_system-netbsd"]
+	path = operating_system-netbsd
+	url = ../operating_system-netbsd
+	branch = main
+[submodule "operating_system-posix"]
+	path = operating_system-posix
+	url = ../operating_system-posix
