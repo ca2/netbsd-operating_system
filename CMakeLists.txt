@@ -52,7 +52,8 @@ endif()
 
 
 add_subdirectory(operating_system-posix/write_text_pango)
-add_subdirectory(operating_system-posix/audio_sndio)
+add_subdirectory(operating_system-posix/audio_audio)
+#add_subdirectory(operating_system-posix/audio_sndio)
 #add_subdirectory(operating_system-netbsd/audio_mixer_alsa)
 #add_subdirectory(operating_system-netbsd/music_midi_alsa)
 
