@@ -5,6 +5,7 @@ project(netbsd-operating_system)
 
 add_subdirectory(operating_system-posix/nano_dynamic_library_dl)
 add_subdirectory(operating_system-posix/nano_dynamic_library_dl_null)
+add_subdirectory(operating_system-posix/nano_http_command_line)
 
 
 

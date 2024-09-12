@@ -1,4 +1,4 @@
-# Install script for directory: /home/camilo/cmake/integration
+# Install script for directory: /home/camilo/cmake/integration/source/integration
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,36 +39,41 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/camilo/cmake/integration/operating_system/source/app/cmake_install.cmake")
+  include("/home/camilo/cmake/integration/operating_system/source/integration/application_build_helper/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/camilo/cmake/integration/operating_system/operating_system/cmake_install.cmake")
+  include("/home/camilo/cmake/integration/operating_system/source/integration/code/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/camilo/cmake/integration/operating_system/port/cmake_install.cmake")
+  include("/home/camilo/cmake/integration/operating_system/source/integration/configurator/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/camilo/cmake/integration/operating_system/source/cmake_install.cmake")
+  include("/home/camilo/cmake/integration/operating_system/source/integration/library/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/camilo/cmake/integration/operating_system/source/app/launch/cmake_install.cmake")
+  include("/home/camilo/cmake/integration/operating_system/source/integration/integration/cmake_install.cmake")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/camilo/cmake/integration/operating_system/source/integration/launch_code/cmake_install.cmake")
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/camilo/cmake/integration/operating_system/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/camilo/cmake/integration/operating_system/source/integration/launch_store/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/camilo/cmake/integration/operating_system/source/integration/_distro_release/cmake_install.cmake")
+endif()
+
