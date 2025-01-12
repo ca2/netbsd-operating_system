@@ -8,7 +8,7 @@ project(netbsd-operating_system)
 add_subdirectory(operating_system-posix/nano_http_command_line)
 add_subdirectory(operating_system-posix/nano_compress_command_line)
 
-
+add_subdirectory(operating_system-posix/nano_http_libcurl)
 
 add_subdirectory(operating_system-netbsd/node_netbsd)
 add_subdirectory(operating_system-posix/acme_posix)
